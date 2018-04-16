@@ -43,12 +43,10 @@ extension InputView {
 
     }
 
-    // "-" 기준으로 나누기
     private func splitInputToPoint(_ input: String) -> [String] {
         return input.split(separator: "-").map(String.init)
     }
-    
-    // x, y 로 나누기
+
     private func splitXY(_ points: [String]) throws -> [MyPoint] {
         var coordinates = [MyPoint]()
         for point in points {
